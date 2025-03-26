@@ -1,0 +1,232 @@
+/* Style the navbar links */
+.custom-nav {
+  display: flex; /* Align list items horizontally */
+  gap: 20px; /* Add spacing between list items */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.custom-nav .nav-link {
+  color: black !important; /* Force the color to black */
+  font-family: "Inter"; /* Change the font */
+  font-size: 16px; /* Adjust the font size */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.custom-nav .nav-link:hover {
+  color: gray !important; /* Change to gray on hover */
+}
+
+.custom-nav .nav-link.active {
+  color: black !important; /* Highlight active link */
+  font-weight: bold; /* Make it bold */
+}
+.heading-space{
+    margin: 10px;
+    padding: 5px;
+}
+/* Ensure the image fits within its container */
+.picture-img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any inline spacing issues */
+  }
+  /* Align the logo and heading with the image */
+.container {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  .logo-container {
+    margin-bottom: 10px; /* Add spacing below the logo */
+  }
+
+/* Main content container */
+.main-content {/* Stack items vertically */
+    gap: 20px; /* Add spacing between sections */
+    margin-top: 20px;/* Add spacing above the content */
+    padding: 50px; /* Add padding around the content */
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row; /* Stack items horizontally */
+    justify-content: space-between; /* Space items evenly */
+  }
+  
+  /* Image container */
+.image-container {
+    width: 100%; /* Ensure the image takes full width */
+    max-width: 1200px; /* Limit the maximum width */
+  }
+  
+  /* Heading and description container */
+.head-description-container {
+    width: 100%; /* Match the width of the image */
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 50px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: row; /* Align heading and description side by side */
+    gap: 200px; /* Add spacing between heading and description */
+  }
+  
+  /* Heading styles */
+  .main-heading {
+    font-size: 70px; /* Adjust font size */
+    font-family: "Inter"; /* Use a serif font */
+    font-weight: 800;
+    color: black;
+  }
+  
+  /* Paragraph styles */
+  .homepage-para {
+    font-family: "Inter"; /* Use a serif font */
+    font-size: 15px;
+    color: grey;
+  }
+  
+  /* Button styles */
+  .button {
+    color:black;
+    font-family: "Inter";
+    font-size: 19px;
+    background-color: #f15c52;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    width: 180px;
+    margin: auto;
+  }
+  
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* New content card */
+  .new-bg-card {
+    flex: 0 0 300px; /* Fix the width of the card */
+    background-color: #00001a;
+    padding: 20px;
+    color: white;
+    border-radius: 5px; /* Add rounded corners */
+    width: 400px;
+    height: 500px;
+  }
+  
+  .new-heading {
+    font-family: "Inter";
+    font-size: 1.5rem;
+    color: #eca74b;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .new-subheading {
+    font-family: "Inter";
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .new-description {
+    font-family: "Inter";
+    font-size: 0.9rem;
+    color: #626377;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+ .heading1{
+    color: #f15c52;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: bold;
+ } 
+ .heading2{
+    color: black;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .heading2:hover{
+    color: #f15c52;
+ }
+ .pic-description{
+    color: grey;
+    font-family: "Inter";
+    font-size: 15px;
+    text-align: justify;
+ }
+ .pic-container{
+    margin:auto;
+ }
+ .content-container{
+    padding:12px;
+ }
+ .image-box{
+    height: 130px;
+    width: 100px;
+ }
+ /* Responsive Design for Tablet */
+@media (max-width: 768px) {
+    .head-description-container {
+      flex-direction: column; /* Stack heading and description vertically */
+      text-align: center; /* Center align text for smaller screens */
+    }
+  
+    .main-heading {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+  
+    .homepage-para {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+  
+    .button {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 8px 16px; /* Adjust padding */
+    }
+    .image-box {
+        height: 100px; /* Adjust image height for smaller screens */
+        width: 80px; /* Adjust image width for smaller screens */
+      }
+    
+      .content-container {
+        padding: 8px; /* Reduce padding for smaller screens */
+      }
+    }
+.retrobg{
+    background-image: url(C:\Users\merug\OneDrive\Desktop\main-project\news-homepage-main\assets\images\image-retro-pcs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    width: auto;
+}
+.retroheading{
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    color: black;
+}
+.retropara{
+    font-family: "Inter";
+    font-size: 15px;
+    text-align: left;
+    color: grey;
+}
+.retro-bottom-bg{
+    background-color: #19193b;
+    padding: 20px;
+    height: 40vh;
+    width: auto;
+}
